@@ -356,7 +356,7 @@ def main_app():
         st.session_state.api_keys["openai"] = st.text_input(
             "OpenAI API Key (for LLM)",
             type="password",
-            value=st.session_state.api_keys.get("openai", ""),
+            value="",
             help="Used for agent reasoning (CrewAI) and embeddings (LangChain)."
         )
 
